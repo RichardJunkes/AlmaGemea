@@ -29,3 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Define a posição do scroll
     containerFotos.scrollLeft = scrollCentral;
 });
+
+// Função para centralizar a rolagem da página
+function centralizarRolagem() {
+    const alturaTotal = document.documentElement.scrollHeight;
+    const alturaJanela = window.innerHeight;
+    const posicaoCentral = (alturaTotal - alturaJanela) / 2;
+    window.scrollTo(0, posicaoCentral);
+}
+
+// Centraliza a rolagem quando a página carregar
+window.addEventListener('load', centralizarRolagem);
