@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda';
+}
+header {
+    background-color: #663b3b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+main p.fotos {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    max-width: 100%;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+main img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Estilizando a barra de rolagem */
+main p.fotos::-webkit-scrollbar {
+    height: 8px;
+}
+
+main p.fotos::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+main p.fotos::-webkit-scrollbar-thumb {
+    background: #663b3b;
+    border-radius: 4px;
+}
+
+main p.fotos::-webkit-scrollbar-thumb:hover {
+    background: #4a2a2a;
+}
+
+main section.contador {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+} 
+main h2 {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #663b3b;
+    text-align: center;
+}
+main section.texto {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main section.texto p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #663b3b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.music-player {
+    text-align: center;
+    padding: 20px 0;
+    background: transparent;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.music-player audio {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilizando os controles do áudio com a cor marrom */
+.music-player audio::-webkit-media-controls-panel {
+    background-color: #663b3b;
+}
+
+.music-player audio::-webkit-media-controls-current-time-display,
+.music-player audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+}
+
+.music-player audio::-webkit-media-controls-play-button,
+.music-player audio::-webkit-media-controls-timeline,
+.music-player audio::-webkit-media-controls-volume-slider {
+    filter: invert(1);
+}
